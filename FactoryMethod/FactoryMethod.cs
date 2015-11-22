@@ -1,19 +1,7 @@
 ﻿using System;
 
-namespace GoF
-{
-    public class FactoryMethodStarter : IStarter
-    {
-        public void Run()
-        {
-            Product credit = new CreditManager().Create();
-            credit.Print();
-
-            Product deposit = new DepositManager().Create();
-            deposit.Print();
-        }
-    }
-
+namespace FactoryMethod
+{  
     public abstract class ProductManager
     {
         public void Calculate() { }
