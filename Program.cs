@@ -10,7 +10,8 @@ namespace Patterns
             var patterns = new List<IStarter>
             {
                 new AbstractFactory.Starter(),
-                new FactoryMethod.Starter()
+                new FactoryMethod.Starter(),
+                new Vizitor.Starter()
             };
             
             foreach(var pattern in patterns)
